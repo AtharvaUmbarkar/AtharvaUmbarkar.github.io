@@ -1,6 +1,6 @@
 import './App.css';
 
-import { HashRouter, Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 // import { useState } from 'react';
 
 import Navbar from './components/Navbar/Navbar'
@@ -12,7 +12,7 @@ import Skills from './components/Skills/Skills';
 function App() {
   return (
     <div className='app flex flex-col'>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Navigate replace to="/home" />} />
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/skills" element={<Skills />} />
           {/* <Route exact path="/about" element={<About />} /> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
