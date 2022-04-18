@@ -1,0 +1,7 @@
+.carousel-button {
+  @apply text-xl sm:text-2xl !important;
+}
+
+.button-wrapper {
+  width: inherit;
+}

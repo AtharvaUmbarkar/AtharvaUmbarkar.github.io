@@ -1,0 +1,33 @@
+.navbar {
+  transition: width 50ms ease-in-out;
+  white-space: nowrap;
+}
+
+.nav_active {
+  @apply bg-slate-500 bg-opacity-30 rounded-md text-slate-300 first-letter:text-slate-300 hover:first-letter:text-slate-300;
+}
+
+/* .lg-nav-list {
+  background-image: linear-gradient(
+    to right,
+    #f8fafc 42%,
+    #60a5fa 48%,
+    #60a5fa 52%,
+    #f8fafc 58%
+  );
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-bg 15s ease-in-out infinite alternate;
+}
+
+@keyframes text-bg {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+} */

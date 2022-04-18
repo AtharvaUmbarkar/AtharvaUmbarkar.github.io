@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  @apply scroll-smooth;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  background-image: linear-gradient(
+    to bottom right,
+    #1e3a8a,
+    #334155 35%,
+    #334155 65%,
+    #1e3a8a
+  );
+  background-size: 400%;
+  background-repeat: no-repeat;
+  animation: bg-animation 20s ease-in-out infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-600;
+}
+
+body::-webkit-scrollbar {
+  @apply bg-slate-700 w-4;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-lg;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-900;
+}

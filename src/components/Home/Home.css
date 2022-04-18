@@ -1,0 +1,60 @@
+.hello {
+  animation: hello-animation 20s ease-in-out infinite alternate,
+    hello-in 1s ease-out forwards;
+}
+
+.intro {
+  animation: intro-border 1s ease-out forwards;
+}
+
+@keyframes intro-border {
+  0% {
+    @apply border-blue-100;
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    @apply border-blue-400;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hello-animation {
+  0% {
+    @apply text-pink-500;
+  }
+  100% {
+    @apply text-fuchsia-500;
+  }
+}
+
+@keyframes hello-in {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.css-1r0q2b1-MuiSvgIcon-root {
+  @apply sm:text-3xl md:text-4xl xl:text-5xl !important;
+}
+
+.description {
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
