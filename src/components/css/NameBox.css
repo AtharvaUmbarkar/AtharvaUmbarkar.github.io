@@ -1,0 +1,6 @@
+.icon {
+    background: url('../../../public/images/texture.gif');
+    -webkit-background-clip: text;
+    background-size: contain;
+    color: transparent;
+}

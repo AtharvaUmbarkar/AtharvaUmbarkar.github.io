@@ -1,0 +1,10 @@
+.experiences-pane-button {
+    @apply grid place-items-center text-sm text-white h-4/5 aspect-square border-2 border-solid border-green z-10 bg-black mr-8;
+}
+.experiences-pane-button-hover {
+    @apply hover:border-opacity-70 hover:border-4 hover:text-green hover:cursor-pointer;
+}
+
+.experiences-pane-button-active {
+    @apply grid place-items-center text-sm text-black h-4/5 aspect-square border-2 border-solid border-green z-10 bg-green mr-8;
+}

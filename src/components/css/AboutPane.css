@@ -1,0 +1,11 @@
+.about-pane-button {
+    @apply w-4/5 aspect-square border-2 border-solid border-blue text-white mt-8 grid place-items-center text-sm bg-black z-10 rounded-sm;
+}
+
+.about-pane-button-hover {
+    @apply hover:border-opacity-70 hover:border-4 hover:text-blue hover:cursor-pointer;
+}
+
+.about-pane-button-active {
+    @apply w-4/5 aspect-square border-2 border-solid mt-8 grid place-items-center text-sm z-10 rounded-sm bg-blue border-blue cursor-pointer text-black;
+}

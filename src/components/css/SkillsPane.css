@@ -1,0 +1,15 @@
+.skills {
+    writing-mode: vertical-lr;
+    /* text-orientation: upright; */
+}
+
+.skills-pane-button {
+    @apply w-4/5 aspect-square border-2 border-solid border-red text-white mb-8 grid place-items-center text-sm bg-black z-10;
+}
+.skills-pane-button-hover {
+    @apply hover:border-opacity-70 hover:border-4 hover:text-red hover:cursor-pointer;
+}
+
+.skills-pane-button-active {
+    @apply w-4/5 aspect-square border-2 border-solid border-red text-black mb-8 grid place-items-center text-sm bg-red z-10;
+}
