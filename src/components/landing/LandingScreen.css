@@ -1,0 +1,43 @@
+.landing-screen {
+    background-image: url('../../../public/images/backgrounds/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @apply bg-black bg-blend-multiply bg-opacity-70
+}
+
+.landing-name {
+    writing-mode: vertical-lr;
+    font-size: 8cqh;
+}
+
+.landing-profession {
+    font-size: min(18cqw, 12rem, 15vh);
+}
+
+.landing-welcome {
+    font-size: clamp(1.5rem, min(5vw, 5vh), 3rem);
+}
+
+.landing-texture {
+    /* background-image: url('../../../public/images/texture.gif'); */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.landing-buttons {
+    font-size: clamp(1.2rem, 2.5cqw, 1.7rem);
+    scroll-behavior: smooth !important;
+}
+
+@media (min-width: 768px) {
+    .landing-profession {
+        font-size: min(16cqw, 12rem, 15vh);
+    }
+}
+
+/* @media (min-width: 1024px) {
+    .landing-profession {
+        width: min(60rem, 60vw);
+    }
+} */

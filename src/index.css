@@ -22,11 +22,6 @@ body, html, #root {
 
 body {
     font-family: "Poppins", sans-serif;
-    /* background-image: url('../public/images/texture.gif');
-    background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* filter: blur(100px);
-    -webkit-filter: blur(8px); */
 }
 
 ::-webkit-scrollbar {
