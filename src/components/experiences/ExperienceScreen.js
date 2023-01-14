@@ -1,8 +1,13 @@
 import React from 'react'
 
+import './ExperienceScreen.css'
+
+
 const ExperienceScreen = () => {
   return (
-    <div className='h-full w-full flex snap-start bg-yellow-grad'></div>
+    <div className='experience-screen min-h-screen w-full flex flex-col items-center snap-start px-2 py-4'>
+
+    </div>
   )
 }
 

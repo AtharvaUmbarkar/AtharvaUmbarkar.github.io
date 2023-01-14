@@ -37,7 +37,7 @@ const Profession = () => {
 
 const Name = () => {
   return (
-    <div className='landing-name h-full text-yellow font-bold leading-none text-center flex flex-row my-2 mx-1'>
+    <div className='landing-name min-h-screen text-yellow font-bold leading-none text-center flex flex-row my-2 mx-1'>
       <ul className='flex flex-row mb-4 flex-grow justify-evenly'>
         <li>A</li>
         <li>T</li>

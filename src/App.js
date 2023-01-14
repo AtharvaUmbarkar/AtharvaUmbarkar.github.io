@@ -15,8 +15,8 @@ function App() {
         <LandingScreen/>
         <AboutScreen/>
         <SkillScreen/>
-        <ExperienceScreen/>
         <ProjectScreen/>
+        <ExperienceScreen/>
       </div>
 
     </div>
