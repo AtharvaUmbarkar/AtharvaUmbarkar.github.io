@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App h-full bg-black text-white font-poppins">
 
-      <div className='snap-y snap-mandatory h-screen w-screen overflow-y-scroll'>
+      <div className='lh:snap-y lh:snap-mandatory h-screen w-screen overflow-y-scroll'>
         <LandingScreen/>
         <AboutScreen/>
         <SkillScreen/>

@@ -15,13 +15,16 @@ module.exports = {
         'blue': '#0ea5e9',
         'yellow': '#fead13',
         'red': '#f81550',
+        'red-sec': 'rgba(248, 21, 80, 0.7)',
+        'red-sec-2': 'rgba(248, 21, 80, 0.8)',
+        'red-sec-3': 'rgba(248, 21, 80, 0.5)',
         'green': '#00ad94',
         'orange': '#e66e3c',
 
         'blue-sec': '#0c4a6e',
 
         'blue-op': {
-          'full': 'rgba(14, 165, 233, 1)', 
+          'full': 'rgba(14, 165, 233, 1)',
           800: 'rgba(14, 165, 233, 0.8)',
           700: 'rgba(14, 165, 233, 0.7)',
           600: 'rgba(14, 165, 233, 0.6)',
@@ -51,14 +54,8 @@ module.exports = {
           700: "#999999",
           800: "#666666",
           900: "#333333"
-},
-      },
-      backgroundImage: {
-        'blue-grad': "linear-gradient(345deg, rgba(36, 133, 175, 0.3) 0%, rgba(38,38,38,1) 15%, rgba(38,38,38,1) 85%, rgba(36, 133, 175, 0.3) 100%)",
-        'yellow-grad': "linear-gradient(345deg, rgba(254,173,19,0.3) 0%, rgba(38,38,38,1) 15%, rgba(38,38,38,1) 85%, rgba(254,173,19,0.3) 100%)",
-        'red-grad': "linear-gradient(345deg, rgba(248, 21, 80, 0.3) 0%, rgba(38,38,38,1) 15%, rgba(38,38,38,1) 85%, rgba(248, 21, 80, 0.3) 100%)",
-        'green-grad': "linear-gradient(345deg, rgba(0, 173, 148, 0.3) 0%, rgba(38,38,38,1) 15%, rgba(38,38,38,1) 85%, rgba(0, 173, 148, 0.3) 100%)",
-        'landing-grad': "linear-gradient(to right, #2485af, #0090b1, #009bad, #00a5a3, #00ad94)"
+        },
+
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
@@ -68,7 +65,12 @@ module.exports = {
       },
       boxShadow: {
         'blue-blurred': "0px 0px 10px 1px rgba(14,165,233,1)",
+        'red-blurred': "0px 0px 10px 1px rgba(248,21,80,1)",
       },
+      screens: {
+        'sh': { 'raw': '(max-height: 680px)' },
+        'lh': { 'raw': '(min-height: 680px)' },
+      }
     },
   },
   plugins: [],

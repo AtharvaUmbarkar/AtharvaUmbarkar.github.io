@@ -4,4 +4,34 @@
     background-size: cover;
     background-position: center center;
     @apply bg-red bg-blend-multiply bg-opacity-100;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.project-card-desc {
+    /* word-break: break-all; */
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.project-card-desc::-webkit-scrollbar{
+    display: unset;
+    @apply w-1 lg:w-2;
+}
+.project-card-desc::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-red-sec-3;
+}
+.project-card-desc::-webkit-scrollbar-track {
+    @apply rounded-md bg-transparent;
+}
+
+.project-card-inner-cover {
+    background-image: url('../../../public/images/projects/konduct/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project-nav-btn-container{
+    height: min(15vh, 3rem);
 }
