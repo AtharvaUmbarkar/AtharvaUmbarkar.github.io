@@ -72,7 +72,7 @@ const ProjectScreen = () => {
           })}
         </LayoutGroup>
       </div>
-      <PageControl handlePageChange={handlePageChange} page={page} />
+      {currCard === null && <PageControl handlePageChange={handlePageChange} page={page} />}
     </div>
   )
 }
