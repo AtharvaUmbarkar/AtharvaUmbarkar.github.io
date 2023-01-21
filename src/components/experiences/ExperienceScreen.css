@@ -5,3 +5,14 @@
     background-position: center center;
     @apply bg-yellow bg-blend-multiply bg-opacity-100;
 }
+
+.experience-text-box::-webkit-scrollbar{
+    display: unset;
+    @apply w-1 lg:w-2;
+}
+.experience-text-box::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-yellow-sec;
+}
+.experience-text-box::-webkit-scrollbar-track {
+    @apply rounded-md bg-transparent;
+}

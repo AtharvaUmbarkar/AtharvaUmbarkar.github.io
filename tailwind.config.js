@@ -1,9 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      '2xs': { 'raw': '(min-width: 330px)' },
+      'xs': { 'raw': '(min-width: 400px)' },
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         'sec-1': '#1f1d38',
@@ -13,7 +19,9 @@ module.exports = {
         'white-sec': '#e5e6e6',
         'black': '#262626',
         'blue': '#0ea5e9',
+        'blue-sec': '#0c4a6e',
         'yellow': '#fead13',
+        'yellow-sec': 'rgba(254, 173, 19, 0.5)',
         'red': '#f81550',
         'red-sec': 'rgba(248, 21, 80, 0.7)',
         'red-sec-2': 'rgba(248, 21, 80, 0.8)',
@@ -21,7 +29,8 @@ module.exports = {
         'green': '#00ad94',
         'orange': '#e66e3c',
 
-        'blue-sec': '#0c4a6e',
+        'black-op': 'rgba(38, 38, 38, 0.85)',
+
 
         'blue-op': {
           'full': 'rgba(14, 165, 233, 1)',
@@ -44,18 +53,6 @@ module.exports = {
           900: "#00231e"
         },
 
-        whit: {
-          100: "#ffffff",
-          200: "#ffffff",
-          300: "#ffffff",
-          400: "#ffffff",
-          500: "#ffffff",
-          600: "#cccccc",
-          700: "#999999",
-          800: "#666666",
-          900: "#333333"
-        },
-
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
@@ -66,10 +63,15 @@ module.exports = {
       boxShadow: {
         'blue-blurred': "0px 0px 10px 1px rgba(14,165,233,1)",
         'red-blurred': "0px 0px 10px 1px rgba(248,21,80,1)",
+        'yellow-blurred': "0px 0px 5px 1px rgba(254,173,19,0.75)",
       },
       screens: {
         'sh': { 'raw': '(max-height: 680px)' },
         'lh': { 'raw': '(min-height: 680px)' },
+
+      },
+      fontSize: {
+        '2xs': '0.625rem',
       }
     },
   },

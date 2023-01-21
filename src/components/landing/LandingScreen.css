@@ -1,9 +1,19 @@
 .landing-screen {
     background-image: url('../../../public/images/backgrounds/bg2.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    background-position: center center;
-    @apply bg-black bg-blend-multiply bg-opacity-70
+    /* background-position: center center; */
+    animation: landing-bg-scroll 2400s infinite;
+    @apply bg-black bg-blend-multiply bg-opacity-70;
+}
+
+@keyframes landing-bg-scroll {
+    from {
+        background-position: 0 center;
+      }
+      to {
+        background-position: -10000px center;
+      }
 }
 
 .landing-name {

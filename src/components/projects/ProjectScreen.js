@@ -8,14 +8,14 @@ import ProjectCard from './ProjectCard';
 
 
 const PageControl = (props) => {
-  const { handlePageChange, page } = props;
+  const { handlePageChange, page, visible } = props;
 
   const handlePageControl = (i) => {
     handlePageChange(i);
   }
 
   return (
-    <motion.div layout className='flex flex-col items-center h-fit w-[90%] md:w-2/3 lg:w-2/5 mb-2 mt-2 md:mt-auto'>
+    <motion.div layout animate={{ display: visible ? 'flex' : 'none' }} className=' flex-col items-center h-fit w-[90%] md:w-2/3 lg:w-2/5 mb-2 mt-2 md:mt-auto'>
       <div className='project-nav-btn-container w-2/3 relative flex flex-col justify-center'>
         {/* <div className='absolute top-1/2 -translate-y-1/2 h-[5%] w-full bg-red'></div> */}
         <ul className='flex flex-row justify-center h-2/3 w-full'>
@@ -72,7 +72,7 @@ const ProjectScreen = () => {
           })}
         </LayoutGroup>
       </div>
-      {currCard === null && <PageControl handlePageChange={handlePageChange} page={page} />}
+      {currCard === null && <PageControl handlePageChange={handlePageChange} page={page} visible={visible} />}
     </div>
   )
 }

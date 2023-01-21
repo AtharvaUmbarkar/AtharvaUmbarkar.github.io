@@ -12,11 +12,11 @@ function App() {
     <div className="App h-full bg-black text-white font-poppins">
 
       <div className='lh:snap-y lh:snap-mandatory h-screen w-screen overflow-y-scroll'>
-        <LandingScreen/>
-        <AboutScreen/>
-        <SkillScreen/>
-        <ProjectScreen/>
-        <ExperienceScreen/>
+        <LandingScreen />
+        <AboutScreen />
+        <SkillScreen />
+        <ProjectScreen />
+        <ExperienceScreen />
       </div>
 
     </div>
