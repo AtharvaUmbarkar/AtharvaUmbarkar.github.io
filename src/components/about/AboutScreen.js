@@ -46,7 +46,7 @@ const AboutScreen = () => {
   }
 
   return (
-    <div className='about-screen min-h-screen w-full flex flex-col items-center snap-start px-2 py-4'>
+    <div id='about-screen' className='about-screen min-h-screen w-full flex flex-col items-center snap-start px-2 py-4'>
 
       <div className='about-title text-green text-3xl md:text-4xl lg:text-5xl font-semibold text-center md:w-2/3 lg:w-1/3'>ABOUT ME</div>
 
@@ -75,11 +75,11 @@ const AboutScreen = () => {
 
       <div className='flex flex-row items-center justify-between w-3/4 md:w-2/3 lg:w-1/3 my-4 py-2 px-1 backdrop-blur-md select-none'>
         <ul className='flex flex-row items-center justify-between mx-[10vw] md:mx-24 lg:mx-12 text-2xl flex-grow text-white-sec md:text-3xl lg:text-[2.75vw]'>
-          <li className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillLinkedin /></li>
-          <li className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillGithub /></li>
-          <li className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillFacebook /></li>
-          <li className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillInstagram /></li>
-          <li className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillMail /></li>
+          <a href='https://www.linkedin.com/in/atharva-umbarkar/' target='_blank' rel='noreferrer' className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillLinkedin /></a>
+          <a href='https://github.com/AtharvaUmbarkar' target='_blank' rel='noreferrer' className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillGithub /></a>
+          <a href='https://www.facebook.com/atharva.umbarkar.351' target='_blank' rel='noreferrer' className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillFacebook /></a>
+          <a href='https://www.instagram.com/atum_20/' target='_blank' rel='noreferrer' className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillInstagram /></a>
+          <a href='mailto: atharvaumbarkar1@gmail.com' target='_blank' rel='noreferrer' className='hover:text-green hover:backdrop-blur-3xl hover:cursor-pointer hover:scale-110'><AiFillMail /></a>
         </ul>
         {/* <div className='text-green pl-[8vw] md:pl-[8vw] text-xl md:text-2xl lg:text-3xl'>Socials</div> */}
       </div>

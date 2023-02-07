@@ -2,12 +2,12 @@ const skillData = [
     [
         'FrontEnd',
         [['F', 1], ['R', 2], ['O', 3], ['N', 4], ['T', 5], ['E', 6], ['N', 7], ['D', 8]],
-        ['ReactJS', 'TailwindCSS', 'MaterialUI', 'Bootstrap', 'Flutter', 'Dart', 'CSS', 'JavaScript'],
+        ['NextJS', 'TailwindCSS', 'TypeScript', 'MaterialUI', 'Bootstrap', 'Flutter', 'Dart', 'DaisyUI',],
     ],
     [
         'BackEnd',
         [['B', 1], ['A', 2], ['C', 3], ['K', 4], ['E', 5], ['N', 6], ['D', 7]],
-        ['NodeJS', 'ExperssJS', 'BCryptJS', 'MongoDB', 'MySQL', 'JWT'],
+        ['NodeJS', 'ExperssJS', 'NextAuth', 'BCryptJS', 'MongoDB', 'MySQL', 'JWT'],
     ],
     [
         'Others',

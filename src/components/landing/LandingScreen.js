@@ -85,7 +85,7 @@ const LandingScreen = () => {
             <div className='landing-welcome my-4 flex-shrink text-white font-bold'>Welcome to my portfolio website</div>
             <div className='landing-buttons flex flex-row w-full flex-wrap justify-start lg:justify-evenly items-center text-green font-semibold'>
               <a href='https://drive.google.com/file/d/1bQJFL6dd3Y4riA8gkgmwx1WZc1aJaH1x/view?usp=share_link' target="_blank" className='text-center border-2 backdrop-blur-md rounded-sm flex-grow border-green border-solid mb-4 hover:border-slate-300 hover:text-slate-300 mr-2' rel="noreferrer">CV</a>
-              <button className='text-center border-2 backdrop-blur-md rounded-sm flex-grow border-green border-solid mb-4 hover:border-slate-300 hover:text-slate-300'>Lets Talk</button>
+              <a href='#about-screen' className='text-center border-2 backdrop-blur-md rounded-sm flex-grow border-green border-solid mb-4 hover:border-slate-300 hover:text-slate-300'>Lets Talk</a>
             </div>
             <LandingAnimation/>
           </div>

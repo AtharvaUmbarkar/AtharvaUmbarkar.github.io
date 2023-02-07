@@ -166,7 +166,7 @@ const ProjectCard = (props) => {
                   </div>
                   <div className='flex text-3xl m-1' >
                     <div className='cursor-pointer rounded-sm bg-red-sec p-1 mr-1 hover:bg-red flex-grow flex justify-center' onClick={handleClose}><CgArrowLongLeft /></div>
-                    <div className='cursor-pointer rounded-sm bg-red-sec w-1/4 p-1 hover:bg-red flex justify-center'><AiFillGithub /></div>
+                    <a href={card.projectLink} target='_blank' rel='noreferrer' className='cursor-pointer rounded-sm bg-red-sec w-1/4 p-1 hover:bg-red flex justify-center'><AiFillGithub /></a>
                   </div>
                 </div>
 
