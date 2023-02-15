@@ -7,7 +7,7 @@ const skillData = [
     [
         'BackEnd',
         [['B', 1], ['A', 2], ['C', 3], ['K', 4], ['E', 5], ['N', 6], ['D', 7]],
-        ['NodeJS', 'ExperssJS', 'NextAuth', 'BCryptJS', 'MongoDB', 'MySQL', 'JWT'],
+        ['NodeJS', 'ExpressJS', 'NextAuth', 'BCryptJS', 'MongoDB', 'MySQL', 'JWT'],
     ],
     [
         'Others',
